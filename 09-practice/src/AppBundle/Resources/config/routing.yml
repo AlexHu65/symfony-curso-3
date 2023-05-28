@@ -1,0 +1,7 @@
+inventario:
+      path: /inventario/index/{name}/{page}
+      defaults: { _controller: AppBundle:Inventario:index , page: 1 }
+      methods: [GET]
+      requirements:
+              name: "[a-zA-Z]*"
+              page: "[0-9]"

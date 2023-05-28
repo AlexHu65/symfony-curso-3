@@ -1,0 +1,8 @@
+pruebas_index:
+      path: /alumno/index/{lang}/{name}/{page}
+      defaults: { _controller: AppBundle:Alumno:index , page: 1}
+      methods: [GET , POST]
+      requirements:
+           name: "[a-zA-Z]*"
+           page: "[0-9]*"
+           lang: es|en|fr
